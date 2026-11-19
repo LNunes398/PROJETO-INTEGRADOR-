@@ -1,0 +1,27 @@
+.screen{display:none; min-height:100vh;}
+.screen.active{display:block;}
+#login-screen.active{display:flex; align-items:center; justify-content:center; min-height:100vh; padding:24px;}
+#dash-screen.active{display:block;}
+.view{display:none;}
+.view.active{display:block; animation:rise .4s var(--ease) both;}
+.acct-pane{display:none;}
+.acct-pane.active{display:block;}
+.modal.monitor{width:min(860px,96vw);}
+.mon-row{display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin-bottom:14px;}
+.mon-row .btn-ghost,.mon-row .btn-secondary{padding:9px 14px; font-size:13px; flex:0 0 auto;}
+.mon-bar{flex:1; min-width:120px; height:8px; accent-color:var(--accent);}
+.mon-scroll{max-height:300px; overflow:auto; border:1px solid var(--border); border-radius:var(--radius-sm); margin-bottom:16px;}
+.mon-table{width:100%; border-collapse:collapse; font-size:13px;}
+.mon-table th,.mon-table td{padding:9px 12px; text-align:left; border-bottom:1px solid var(--border); white-space:nowrap;}
+.mon-table th{position:sticky; top:0; background:var(--surface-2); font-size:11px; text-transform:uppercase; letter-spacing:.06em; color:var(--text-faint);}
+.mon-table td.mono{font-family:var(--mono);}
+.mon-table .vazio{text-align:center; color:var(--text-faint); padding:22px;}
+.mon-table input[type=checkbox]{accent-color:var(--accent); width:15px; height:15px;}
+.mon-ja{color:var(--text-faint); font-size:12px;}
+.mon-sec{font-size:11.5px; color:var(--text-dim); font-weight:700; text-transform:uppercase; letter-spacing:.07em; margin:4px 0 8px;}
+.mon-grid{display:grid; grid-template-columns:repeat(3,1fr) auto; gap:8px; margin-bottom:6px;}
+.mon-grid input,.mon-local input{width:100%; padding:11px 13px; border:1px solid var(--border); border-radius:var(--radius-sm); background:rgba(255,255,255,.04); color:var(--text); font-size:13.5px; font-family:inherit; outline:none;}
+.mon-grid input:focus,.mon-local input:focus{border-color:var(--accent); box-shadow:0 0 0 4px var(--accent-ring);}
+.mon-local{padding:14px; border:1px solid var(--accent-line); background:var(--accent-soft); border-radius:var(--radius-sm); margin-bottom:16px;}
+.mon-local label{display:block; font-size:12.5px; color:var(--text); margin-bottom:7px; font-weight:700;}
+.mon-msg{font-size:12.5px; color:var(--text-dim); min-height:18px; margin-bottom:10px;}
